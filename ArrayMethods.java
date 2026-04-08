@@ -30,6 +30,7 @@ ArrayMethods
 
 public class ArrayMethods
 {
+
   /**DESCRIPTION: */
   public static String arrayString(int[] a)
   {
@@ -39,25 +40,64 @@ public class ArrayMethods
   /**DESCRIPTION: */
   public static void swap(int[] array, int a, int b)
   {
-  
-  }
+   int temp = array[a]; 
+   array [a] = array[b];
+   array [b] = temp;
+   }
 	
 	/**DESCRIPTION: */
   public static int indexOfMin(int[] array, int startIndex)
   {
-    return 0; //STUB to keep compiler happy
+  
+    int minValue = array[startIndex];
+    int minIndex = startIndex;
+
+   for (int i = startIndex + 1; i < array.length; i++){
+    if (minValue > array [i]);{
+      minValue= array[i];
+      minIndex = i;
+   
+   //for (int j = 0; j < array.length -1; j++){
+    //if (array[j] < array[indexOfMin]){
+      //indexOfMin = j;
+    }
+  }
+  return minIndex;
   }
 
 	/**DESCRIPTION: */
   public static void reverse(int[] array)
   {
 
+    for (array = 0; array < minIndex-1; array++){
+      int indexOfMin = j;
+
+      for ( i = j+1; i <n; i++){
+        if (array[i] < array[indexOfMin])
+          indexOfMin = i;
+
+      if (indexOfMin!= j) {
+     // swap (array[j], array[indexOfMin]);
+        }
+      }
+    }
   }
 
 	/**DESCRIPTION: */
   public static void selectionSort(int[] array)
   {
+    for (int i = 0; i < array.length-1; i++){
+      
+      indexOfMin = i;
 
+    for (int j = i + 1; j < array.length; j++){
+      if (array[j] < array [indexOfMin]){
+        indexOfMin = j;
+      }
+    }
+
+    int 
+    }
   }
 
 }
